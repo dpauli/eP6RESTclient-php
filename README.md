@@ -6,7 +6,7 @@ Just sign up for the [ePages Developer Program](http://www.epages.cloud/develope
 
 ## Requirements
 
-To use this SDK, you'll need at least **PHP 5.4**.
+To use this SDK, you'll need at least **PHP 5.5**.
 Download or update the latest REST SDK via the command line.
 ```
 wget https://raw.githubusercontent.com/ePages-de/epages-rest-php/master/build/epages-rest-php.phar -O epages-rest-php.phar
