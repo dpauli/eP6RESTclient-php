@@ -1,12 +1,12 @@
 {
     "logging":
     {
-        "level": "NOTIFICATION",
-        "output": "SCREEN",
-        "file": null
+        "level":        "NOTIFICATION",
+        "output":       "SCREEN",
+        "outputfile":   null
     },
     "formatting":
     {
-        "format": "HTML"
+        "format":   "HTML"
     }
 }
