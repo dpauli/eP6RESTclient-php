@@ -4,6 +4,7 @@
  *
  * @author David Pauli <contact@david-pauli.de>
  * @since 0.0.0
+ * @since 0.2.0 Add automaticallly configuration possibility.
  */
 namespace ep6;
 

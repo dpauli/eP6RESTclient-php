@@ -22,35 +22,41 @@ class ConfigLoader {
 	 *
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String The file name where configuration values are defined.
+	 * @return boolean True if setting the configuration works, false if not.
 	 * @since 0.2.0
 	 */
     public static function autoload($filename) {
         
         if (!InputValidator::isExistingFile($filename)) {
-            return;
+            return false;
         }
 
         $handle = fopen($filename, "r");
         
         if (!$handle) {
 			Logger::warning("ep6\ConfigLoader\nConfiguration file can't be opened.");
-            return;
+            return false;
         }
         if (filesize($filename) == 0) {
 			Logger::warning("ep6\ConfigLoader\nConfiguration file is empty.");
-            return;
+            return false;
         }
         
         $configuration = fread($handle, filesize($filename));
         
         if (!$configuration) {
 			Logger::warning("ep6\ConfigLoader\nConfiguration file can't be read.");
-            return;
+            return false;
         }
         
         fclose($handle);
         
         $configArray = JSONHandler::parseJSON($configuration);
+        
+        if (InputValidator::isEmptyArray($configArray)) {
+			Logger::warning("ep6\ConfigLoader\nConfiguration file has no valid JSON.");
+            return false;
+        }
         
         if (!InputValidator::isEmptyArrayKey($configArray, "logging")) {
             
@@ -66,6 +72,8 @@ class ConfigLoader {
                 Logger::setOutputFile($configArray["logging"]["outputfile"]);
             }
         }
+		
+		return true;
     }
 }
 ?>
