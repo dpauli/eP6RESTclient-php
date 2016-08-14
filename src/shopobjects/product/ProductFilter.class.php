@@ -195,7 +195,7 @@ class ProductFilter {
 		if (InputValidator::isEmpty($content)) {
 
 			$this->errorSet("PF-8");
-		    Logger::error("ep6\ProductFilter\nREST respomd for getting products is empty.");
+		    Logger::notify("ep6\ProductFilter\nREST respomd for getting products is empty.");
 			return;
 		}
 

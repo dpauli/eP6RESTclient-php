@@ -867,7 +867,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/description", $dscription);
+		$this->setAttribute("/description", $dscription);
 	}
 
 	/**
@@ -881,7 +881,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/ean", $ean);
+		$this->setAttribute("/ean", $ean);
 	}
 
 	/**
@@ -895,7 +895,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/energyLabelsString", $energyLabelsString);
+		$this->setAttribute("/energyLabelsString", $energyLabelsString);
 	}
 
 	/**
@@ -909,7 +909,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/essentialFeatures", $essentialFeatures);
+		$this->setAttribute("/essentialFeatures", $essentialFeatures);
 	}
 
 	/**
@@ -923,7 +923,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/manufacturer", $manufacturer);
+		$this->setAttribute("/manufacturer", $manufacturer);
 	}
 
 	/**
@@ -937,7 +937,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/name", $name);
+		$this->setAttribute("/name", $name);
 	}
 
 	/**
@@ -951,7 +951,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/productNumber", $number);
+		$this->setAttribute("/productNumber", $number);
 	}
 
 	/**
@@ -965,7 +965,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/searchKeywords", $searchKeywords);
+		$this->setAttribute("/searchKeywords", $searchKeywords);
 	}
 
 	/**
@@ -979,7 +979,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/shortDescription", $shortDescription);
+		$this->setAttribute("/shortDescription", $shortDescription);
 	}
 
 	/**
@@ -993,7 +993,7 @@ class Product {
 
 		self::errorReset();
 
-		$this->setAtribute("/upc", $upc);
+		$this->setAttribute("/upc", $upc);
 	}
 
 	/**
@@ -1516,7 +1516,7 @@ class Product {
 		$productParameter = RESTClient::send(self::RESTPATH, $parameter);
 
 		// update the product
-		$this->patseData($productParameter);
+		$this->parseData($productParameter);
 	}
 }
 ?>
