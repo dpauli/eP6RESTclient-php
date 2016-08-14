@@ -202,6 +202,7 @@ class OrderFilter {
 	 *
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @since 0.1.3
+	 * @since 0.2.0 Set error message for empty responses to notify.
 	 * @return Order[] Returns an array of orders.
 	 */
 	public function getOrders() {
@@ -712,7 +713,7 @@ class OrderFilter {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $productId The product ID to filter.
 	 * @return boolean True if setting works, false if not.
-	 * @since 0.1.3
+	 * @since 0.2.0
 	 */
 	public function setProductId($productId) {
 

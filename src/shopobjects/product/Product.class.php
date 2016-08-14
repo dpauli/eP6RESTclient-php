@@ -862,6 +862,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $description The new description.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setDescription($description) {
 
@@ -876,6 +877,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $ean The new EAN.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setEAN($ean) {
 
@@ -890,6 +892,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $energyLabelsString The new energy labels string.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setEnergyLabelsString($energyLabelsString) {
 
@@ -904,6 +907,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $essentialFeatures The new essential features.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setEssentialFeatures($essentialFeatures) {
 
@@ -918,6 +922,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $manufacturer The new manufacturer.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setManufacturer($manufacturer) {
 
@@ -932,6 +937,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $name The new name.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setName($name) {
 
@@ -946,6 +952,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $number The new product number.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setNumber($number) {
 
@@ -960,6 +967,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $searchKeywords The new $search keywords.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setSearchKeywords($searchKeywords) {
 
@@ -974,6 +982,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $shortDescription The new short description.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setShortDescription($shortDescription) {
 
@@ -988,6 +997,7 @@ class Product {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @param String $upc The new UPC.
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function setUPC($upc) {
 
@@ -1001,6 +1011,7 @@ class Product {
 	 *
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @since 0.1.2
+	 * @since 0.2.0 Fix function call.
 	 */
 	public function unsetDescription() {
 
