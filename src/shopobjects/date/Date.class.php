@@ -78,6 +78,7 @@ class Date {
 	 * @author David Pauli <contact@david-pauli.de>
 	 * @return String The readable format of the Date object.
 	 * @since 0.2.0
+	 * @since 0.2.1 Calculate readable always into GMT/UTC.
 	 */
 	public function asReadable() {
 		return gmdate("Y-m-d\TH:i:s.000\Z", $this->timestamp);

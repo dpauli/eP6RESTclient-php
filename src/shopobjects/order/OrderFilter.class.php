@@ -64,7 +64,7 @@ class OrderFilter {
 	private $isViewed = null;
 
 	/** @var Date|null Show orders which are updated since this date. */
-	private $UpdatedFromDate = null;
+	private $updatedFromDate = null;
 
 	/** @var int The page number to search. */
 	private $page = 1;
