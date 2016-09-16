@@ -9,6 +9,24 @@
 		<testsuite name="InputValidator Test">
 			<file>tests/InputValidatorTest.php</file>
 		</testsuite>
+		<testsuite name="Contact Information Test">
+			<file>tests/ContactInformationTest.php</file>
+		</testsuite>
+		<testsuite name="Privacy Policy Information Test">
+			<file>tests/PrivacyPolicyInformationTest.php</file>
+		</testsuite>
+		<testsuite name="Right Of Withdrawal Information Test">
+			<file>tests/RightOfWithdrawalInformationTest.php</file>
+		</testsuite>
+		<testsuite name="Shipping Information Test">
+			<file>tests/ShippingInformationTest.php</file>
+		</testsuite>
+		<testsuite name="Terms And Condition Information Test">
+			<file>tests/TermsAndConditionInformationTest.php</file>
+		</testsuite>
+		<testsuite name="Address Test">
+			<file>tests/AddressTest.php</file>
+		</testsuite>
 	</testsuites>
 	<groups>
 		<include>
