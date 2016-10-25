@@ -50,6 +50,7 @@ class AddressTest extends \PHPUnit_Framework_TestCase {
         // THEN
 		$this->assertFalse($address->error());
         $this->assertNotNull($address->getBirthday());
+        $this->assertNull($address->getCity());
     }
 
 	/**
@@ -80,10 +81,6 @@ class AddressTest extends \PHPUnit_Framework_TestCase {
 		$this->assertFalse($address->error());
         $this->thenCompleteAddressInformationIsExisting($address);
     }
-	
-	function cleanUp() {
-		unset($this->shop);
-	}
     
     function givenInvalidAddressParameter() {
         return "SomeString";

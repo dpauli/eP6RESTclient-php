@@ -26,7 +26,7 @@ class InputValidator {
 	 * @return boolean True if the parameter is an array, false if not.
 	 * @since 0.0.0
 	 */
-	public static function isArray($parameter) {;
+	public static function isArray($parameter) {
 
 		return is_array($parameter) && !self::isEmpty($parameter);
 	}
