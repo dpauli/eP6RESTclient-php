@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
-ini_set("display_errors", "on");
-require_once("../src/configuration/config.php");
+ini_set('display_errors', 'on');
+require_once '../src/configuration/config.php';
 
 $EOL_PRINT = "<br/>\n";
 echo "***********************************" . $EOL_PRINT;
