@@ -152,7 +152,7 @@ abstract class AbstractShopObject
      * @param   mixed   $value
      * @return  self
      */
-    public function addQueryParameter(string $parameter, $value): self
+    public function addObjectParameter(string $parameter, $value): self
     {
         if (\array_key_exists($parameter, $this->queryParams)) {
             $this->queryParams[$parameter] = $value;

@@ -2,6 +2,7 @@
 declare(strict_types=1);
 namespace EpSDK\ShopObject;
 
+use EpSDK\Constants;
 use EpSDK\HelperObject\HTML;
 use EpSDK\HelperObject\Image;
 use EpSDK\HelperObject\Price\PriceInfo;
@@ -33,8 +34,8 @@ class Product extends AbstractShopObject
 
     /** @var array */
     protected $queryParams = [
-        'locale'    =>  null,
-        'currency'  =>  null
+        Constants::OBJECT_PARAMETER_LOCALIZATION    =>  null,
+        Constants::OBJECT_PARAMETER_CURERNCY        =>  null
     ];
 
     /** @var array Allowed request methods of this object. */

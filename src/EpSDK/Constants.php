@@ -33,4 +33,8 @@ class Constants
     const FILTER_CATEGORY           =   'categoryId';
     const FILTER_ID                 =   'id';
     const FILTER_SEARCH_INVISIBLE   =   'includeInvisible';
+
+    // QUERY PARAMETER
+    const OBJECT_PARAMETER_LOCALIZATION = 'locale';
+    const OBJECT_PARAMETER_CURRENCY     = 'currency';
 }

@@ -118,9 +118,13 @@ class Configuration
      * @return  bool
      * @since   0.4.0
      */
-    public static function resetConfiguration(): bool
+    public static function resetConfiguration(string $module = null): bool
     {
-        self::$configuration = [];
+        if (null !== $module) {
+            unset(self::$configuration[$module]);
+        } else {
+            self::$configuration = [];
+        }
         return true;
     }
 }
