@@ -1,7 +1,7 @@
-<phpunit bootstrap="src/autoload.php" colors="always">
+<phpunit bootstrap="vendor/autoload.php" colors="always">
     <testsuites>
-        <testsuite name="Utility Test">
-            <file>tests/EpSDK/Utility/Client/RESTClientTest.php</file>
+        <testsuite name="Configuration Test">
+            <file>tests/EpSDKTest/Configuration/ConfigurationTest.php</file>
         </testsuite>
     </testsuites>
 </phpunit>
